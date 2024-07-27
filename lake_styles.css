@@ -1,0 +1,187 @@
+﻿body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+}
+/* Top Image */
+header img {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+header nav {
+  background-color: #002366;
+  padding: 10px 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  flex: 1;
+  text-align: center;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+  background-color: #001a4d;
+}
+
+/* Main Content Area */
+#leftcol {
+  background-color: #f5f5dc;
+  padding: 20px;
+  float: left;
+  width: 65%;
+  margin-bottom: 20px;
+}
+#rightcol {
+  background-color: #a0522d;
+  color: #d2b48c;
+  padding: 20px;
+  float: right;
+  width: 30%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* Remove bullet points from lists inside #rightcol */
+#rightcol ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#rightcol ul li {
+  margin-bottom: 10px;
+}
+
+/* Hyperlinks in #rightcol */
+#rightcol a {
+  color: #d2b48c;
+  text-decoration: none;
+}
+
+#rightcol a:hover {
+  color: #b89a7f;
+}
+#rightcol h2 {
+  color: #d2b48c;
+}
+/* Notes and Events Sections */
+#notes,
+#events {
+  width: 48%;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px solid black;
+  float: left;
+  margin-right: 2%;
+}
+
+#notes {
+  background-color: #d8e8d8;
+  color: black;
+}
+
+#notes a {
+  color: #0056b3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#notes a:hover {
+  color: #002366;
+}
+
+#events {
+  background-color: #e0d0f8;
+  /color: black;
+}
+
+#events a {
+  color: #0056b3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#events a:hover {
+  color: #002366;
+}
+
+/* Clearfix for floated elements */
+.notes-events-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Footer */
+footer {
+  background-color: #002366;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  clear: both;
+}
+
+footer em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Blockquote */
+blockquote {
+  padding-left: 15px;
+  margin: 20px 0;
+  font-style: italic;
+  background-color: #a0522d;
+  color: #d2b48c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Utility Classes */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
